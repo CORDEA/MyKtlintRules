@@ -1,0 +1,12 @@
+apply plugin: 'java-library'
+
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compileOnly "com.github.shyiko:ktlint:0.29.0"
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'com.google.truth:truth:0.42'
+    testImplementation "com.github.shyiko:ktlint:0.29.0"
+}
